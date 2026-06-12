@@ -1,6 +1,8 @@
-Loom: [aquí va el link de tu video Loom]
+Loom: https://www.loom.com/share/c4a5348eb01b431c889ce0747b860f6b
 
 Notion Report: https://app.notion.com/p/ATS-Report-Integration-Developer-Business-Systems-Analyst-Oracle-EBS-2026-06-12-37d7886a4f008197b21ad670fb9bd318
+
+Repositorio Github: https://github.com/Julianvgr09/Agent_betterway_ats
 
 Tiempo total invertido: 3 horas contando la espera de el análisis del agente
 
