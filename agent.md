@@ -224,12 +224,10 @@ Sigue estos pasos antes de ejecutar el skill por primera vez.
 ### 1 — Requisitos previos
 - Node.js 18+ instalado — https://nodejs.org/
 - Claude Code instalado en el cmd del pc:
-```bash
-  npm install -g @anthropic-ai/claude-code
+```  npm install -g @anthropic-ai/claude-code
 ```
 - MCP oficial de Notion instalado en el cmd del pc:
-```bash
-  npm install -g @notionhq/notion-mcp-server
+```  npm install -g @notionhq/notion-mcp-server
 ```
 
 ### 2 — Crear cuenta en Notion
@@ -273,3 +271,66 @@ Deberías ver: notion: npx @notionhq/notion-mcp-server - √ Connected
 4. Copia tus PDFs de descripciones de puesto dentro de `inputs/jobs/`
 
 Las carpetas ya están creadas — solo debes poner los archivos dentro.
+
+
+### 8 — Ejecutar el skill
+
+1. Abre el Command Prompt de Windows:
+   - Presiona las teclas `Windows + R` al mismo tiempo
+   - Se abre una ventana pequeña llamada "Ejecutar"
+   - Escribe `cmd` y presiona Enter
+   - Se abre una ventana negra — eso es el Command Prompt
+
+2. Navega hasta la carpeta del proyecto:
+   - En el Command Prompt escribe `cd ` (con espacio al final)
+   - Abre el explorador de Windows y busca la carpeta `Agent_betterway_ats`
+   - Copia la ruta completa de la carpeta (aparece en la barra superior
+     del explorador, ejemplo: `C:\Users\pablo\Desktop\Agent_betterway_ats`)
+   - Pégala después del `cd ` y presiona Enter
+   - Ejemplo:
+```     cd C:\Users\pablo\Desktop\Agent_betterway_ats
+```
+   - Sabes que estás en la carpeta correcta cuando la línea del Command
+     Prompt muestra el nombre de la carpeta, ejemplo:
+     C:\Users\pablo\Desktop\Agent_betterway_ats>
+
+3. Verifica que las carpetas de inputs existen:
+   - Escribe este comando y presiona Enter:
+```     dir inputs
+```
+   - Deberías ver dos carpetas: `candidates` y `jobs`
+   - Si no aparecen, verifica que clonaste el repositorio correctamente
+     en el paso anterior
+
+4. Verifica que tus PDFs están en las carpetas correctas:
+   - Para ver los candidatos:
+```
+     dir inputs\candidates
+```
+   - Para ver los puestos:
+```
+     dir inputs\jobs
+```
+   - Deberías ver tus archivos PDF listados
+
+5. Inicia Claude Code escribiendo:
+```
+   claude
+```
+   - Claude Code se iniciará y mostrará un mensaje de bienvenida
+   - Escribe este mensaje y presiona Enter:
+   Please read and execute the agent.md file in this directory
+
+- Claude Code leerá el `agent.md` y ejecutará el skill completo
+     sin intervención adicional
+   - Al finalizar verás en pantalla el link directo al reporte en Notion
+
+## Notas importantes
+- Nunca compartas tu token de Notion públicamente
+- El skill es completamente reutilizable con cualquier tipo de vacante
+- Los PDFs de inputs no se suben al repositorio — las carpetas están
+  creadas pero vacías, solo debes copiar tus archivos dentro
+- No se requiere código Python ni ninguna dependencia adicional
+- Si Claude Code pide confirmación durante la ejecución, responde `yes`
+- Si algo falla, verifica que el MCP de Notion está conectado ejecutando
+  `claude mcp list` en el Command Prompt antes de iniciar
