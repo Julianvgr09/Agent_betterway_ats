@@ -1,0 +1,3 @@
+inputs/candidates/*.pdf
+inputs/jobs/*.pdf
+.DS_Store
