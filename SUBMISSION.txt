@@ -1,0 +1,12 @@
+Loom: [aquí va el link de tu video Loom]
+
+Notion Report: https://app.notion.com/p/ATS-Report-Integration-Developer-Business-Systems-Analyst-Oracle-EBS-2026-06-12-37d7886a4f008197b21ad670fb9bd318
+
+Tiempo total invertido: 3 horas contando la espera de el análisis del agente
+
+Descripción del skill:
+Skill agéntico reutilizable que evalúa perfiles de candidatos contra
+descripciones de puesto usando IA a través de Claude Code, extrae
+información estructurada de cada CV, evalúa el fit con filtro de
+ubicación y modalidad, y publica un reporte priorizado en Notion
+vía MCP oficial de Notion.
